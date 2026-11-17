@@ -11,13 +11,14 @@
             line-height: 1.5;
             margin: 0;
             background-color: gray;
-            background-image: url("https://i.pinimg.com/1200x/19/37/5d/19375d254796e9e3c50d57d0c60d3bd6.jpg");
-            
+            background-image: url("https://i.pinimg.com/1200x/85/d1/60/85d160ed0b483fec60b3c3f97b7c767f.jpg");   
+            background-size: 100% auto;      
+            background-position: center;    
         }
         header{
-            background-color: white;
-            padding: 14px;
-            border-bottom: 1.5px solid red;
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            border-bottom: 1.5px solid rgb(15, 120, 38);
         }
         header div{
             display: flex;
@@ -35,7 +36,7 @@
             display: flex; /*keep them on a row just*/
             flex-wrap: wrap; /*moves them down if the row is not enough*/
         }
-        .Join-link{
+        .Join{
             background-color: rgb(4, 82, 4);
             color: white;
             padding: 7px 11px;
@@ -53,16 +54,19 @@
             margin: 18px 0;
             border-radius: 10px;
         }
-        h1, h2{
+        h1, h2, h3{
             color: black;
         }
-        .hero{
+        .team{
             padding: 35px 22px;
             color: whitesmoke;
             background: linear-gradient(90deg, rgba(27, 94, 63, 0.795), rgba(8, 73, 43, 0.6)),url("https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1800&q=85");
             background-size: contain;
-
+            background-position: center;
+            
+    
         }
+
         .cards{/* what you can do,.... all the three cards*/
             display: flex; /*put in a row then the rap part just means if it doesnt fit in the row you can drop them down*/
             flex-wrap: wrap;
@@ -119,13 +123,15 @@
             font-size: 16px;
             cursor: pointer;
         }
+        
+
     </style>
 </head>
 <body>
     
     <header>
         <div>
-            <a href="index.html">Clean Kampala</a>
+            <a href="index.html" class="logo">Clean Kampala Hub</a>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="find collector.html">Find a Collector</a>
@@ -135,14 +141,14 @@
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
                 <a href="faq.html">FAQ</a>
-                <a class="Join-link" href ="join.html">Join as a Collector</a>
+                <a class="Join" href ="join.html">Join as a Collector</a>
             </nav>
         </div>
     </header>
     <main>
         <form>
-        <section class="hero">
-            <h1>A clean Kampala Starts with Us</h1>
+        <section class="team">
+            <h1 style="color: blanchedalmond ;">A clean Kampala Starts with Us</h1>
             <p><b>Find waste collectors, report waste problems and learn simple ways to manage waste responsibly.</b></p>
             <a class="button" href="find collector.html">Find a collector</a>
             <a class="button" href="report.html">Report a problem</a>
@@ -161,11 +167,11 @@
             </select> <br>  <!--close the option-->
         <button class="submit">View collector dictionary</button> 
         </form> 
-        <p class="small">The prototype opens the directory page. Use its division headings to find your areea.</p>
+        <p class="small"> Use its division headings to find your area.</p>
         </section>
 
         <section>
-            <h2> WHat you can Do</h2>
+            <h2"> WHat you can Do</h2>
             <div class="cards">
                 <article>
                     <h3>Find a collector</h3>
@@ -178,7 +184,7 @@
                     <a href="report.html">Report a problem</a>
                 </article>
                 <article>
-                    <h3>Learn About easte</h3>
+                    <h3>Learn About</h3>
                     <p>Learn how to separate waste and dispose of it responsibly.</p>
                     <a href="waste guide.html">Read the waste guide</a>
                 </article>
